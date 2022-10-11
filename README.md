@@ -42,7 +42,7 @@ The app can be accessed here: https://recipes-v2.netlify.app/
 
 ### Local deployment
 
-IMPORTANT: first you need to start the Rails app, then the React one
+**IMPORTANT**: first you need to start the Rails app, then the React one
 
 #### Prerequisites
 
