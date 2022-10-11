@@ -1,0 +1,48 @@
+.recipes__form {
+  padding: 2.4rem 9.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.recipes__form-title {
+  font-size: 3.2rem;
+}
+
+.recipes-form__input {
+  width: 100%;
+  max-width: 50rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.recipes-form__info-msg {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.recipes-form__info-msg:hover {
+  color: #555;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 60em) {
+  .recipes-form__info-msg {
+    width: 150%;
+  }
+}

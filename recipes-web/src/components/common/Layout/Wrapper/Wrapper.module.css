@@ -1,0 +1,16 @@
+.recipes__grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 35em) {
+  .recipes__grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

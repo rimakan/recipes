@@ -1,0 +1,41 @@
+.recipes__not-found-page {
+  padding: 0 6rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.not-found-page__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-page__title {
+  font-size: 8rem;
+}
+
+.not-found-page__message {
+  font-size: 4rem;
+}
+
+.not-found-page__img {
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+@media (max-width: 64em) {
+  .not-found-page__message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 50.3em) {
+  .not-found-page__container {
+    display: flex;
+    flex-direction: column;
+  }
+}

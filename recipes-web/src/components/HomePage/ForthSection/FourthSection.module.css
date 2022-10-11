@@ -1,0 +1,38 @@
+.recipes__random-recipe {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.random-recipe {
+  padding: 0 3.2rem;
+}
+
+.recipes__descr-container,
+.recipes__img-container {
+  text-align: center;
+}
+
+.recipes__descr-container {
+  margin-bottom: 5rem;
+}
+
+.recipes__description {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.recipes__meal-title {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.recipes__meal-title:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
+.recipes__random-recipe-img {
+  width: 50%;
+  height: 10%;
+  border-radius: 0.7rem;
+}

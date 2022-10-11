@@ -1,0 +1,59 @@
+.recipes-profile {
+  padding: 4.8rem 0 9.6rem 0;
+  margin: 0 auto;
+}
+
+.recipes-profile__personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recipes-profile__header {
+  font-size: 3.6rem;
+}
+
+.recipes-profile__email-box,
+.recipes-profile__first-name-box,
+.recipes-profile__last-name-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.recipes-profile__info,
+.recipes-profile__email,
+.recipes-profile__first-name,
+.recipes-profile__last_name {
+  font-size: 2.4rem;
+}
+
+.recipes-profile__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.recipes-profile__edit-btn:hover {
+  background-color: #027ad6;
+}
+
+@media (max-width: 38.25em) {
+  .recipes-profile__header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .recipes-profile__header {
+    font-size: 2.4rem;
+  }
+
+  .recipes-profile__info,
+  .recipes-profile__email {
+    font-size: 1.8rem;
+  }
+}

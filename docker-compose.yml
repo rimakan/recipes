@@ -1,0 +1,34 @@
+version: "2.2"
+services:
+  db:
+    image: postgres
+    volumes:
+      - .docker/volumes/database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USERNAME: kfedorenko
+      POSTGRES_PASSWORD: 123456
+  
+  recipes_backend:
+    build: .
+    # command: bash -c "rails db:create && rails db:migrate && rails s -b '0.0.0.0' -p 3001"
+    container_name: recipes_backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - /app
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres@db
+  
+  recipes_web:
+    build: ./recipes-web
+    container_name: recipes_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - /recipes-web/app
+      - /recipes-web/app/node_modules
+    depends_on:
+      - db
+      
