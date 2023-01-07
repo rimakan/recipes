@@ -40,7 +40,7 @@ module RecipesBackend
     config.action_dispatch.default_headers = {
       'Access-Control-Allow-Methods' => 'POST, PUT, PATCH, DELETE, GET, OPTIONS',
       'Access-Control-Request-Method' => '*',
-      'Access-Control-Allow-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization, X-Total-Count'
+      'Access-Control-Allow-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization, X-Total-Count, Set-Cookie'
     }
 
     config.middleware.use ActionDispatch::Cookies
