@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(session_params[:password])
       token = issue_token(@user)
-      cookies.signed[:jwt] = { value: token, httponly: true, same_site: :none, secure: true }
+      cookies.signed[:jwt] = { value: token, httponly: true }
       render json: { status: 'success', message: "Welcome aboard, #{@user.first_name}!" }
     else
       render json: { status: 'error', message: 'Incorrect username or password.' }, status: :unprocessable_entity

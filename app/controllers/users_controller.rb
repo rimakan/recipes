@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
     if @user.save
       token = issue_token(@user)
-      cookies.signed[:jwt] = { value: token, httponly: true, same_site: :none, secure: true }
+      cookies.signed[:jwt] = { value: token, httponly: true }
       render json: { message: "You've successfully signed in!", status: 'success', user: @user.email }
     else
       @user.errors.messages
