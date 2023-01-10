@@ -8,8 +8,6 @@ This is a consolidated repo, which has two apps: front end and back end app.
 
 The app allows you to work with your recipes instead of storing them in papers.
 
-The old version could be found here: https://grvarecipes.herokuapp.com/
-
 ## Technologies used:
 
 ### Front end app
@@ -34,19 +32,19 @@ There are several ways of checking the app out:
 
 ### You can interact with the already deployed app
 
-The app can be accessed here: https://recipes-v2.netlify.app/
+The app can be accessed here: http://188.68.219.155/
 
 - Login: test@example.com
 
 - Password: 123456
 
-### Local deployment
+### How to deploy via docker
 
 **IMPORTANT**: first you need to start the Rails app, then the React one
 
 #### Prerequisites
 
-1. Clone the repo ```https://github.com/rimakan/recipes.git```
+1. Clone the repo ```git clone https://github.com/rimakan/recipes.git ```
 
 2. Install Node v18
 
